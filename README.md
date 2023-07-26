@@ -11,7 +11,7 @@ Each of the above project has its own dependencies. The bewow list the procedure
 
 ## A) CERN ROOT 6.28.04 
  - To install the required packages use <br />
-      **$sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libssl-dev cmake** <br />
+      **$sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libssl-dev cmake fastlink gfortran** <br />
 
 - Pythia6 is required to have the Root lib generated, also it is used by Genie <br />
           To build it navigate to **~/third_party/genie/dependencies/pythia6** <br />
@@ -32,5 +32,8 @@ Each of the above project has its own dependencies. The bewow list the procedure
   To have the root detected go to the installation folder and type
   **source /<install_path>/bin/thisroot.sh**
   After which root scripts can be executed.
+
+  ## B) Geant4
+  
 
     
