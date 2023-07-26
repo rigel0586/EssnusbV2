@@ -1,0 +1,178 @@
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for sw_vers... no
+checking for gfortran... gfortran
+checking for Fortran compiler default output file name... a.out
+checking whether the Fortran compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU Fortran compiler... yes
+checking whether gfortran accepts -g... yes
+checking how to get verbose linking output from gfortran... -v
+checking for Fortran libraries of gfortran...  -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. -lgfortran -lm -lquadmath
+checking for style of include used by make... GNU
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking dependency style of gcc... gcc3
+checking for dummy main to link with Fortran libraries... none
+checking for Fortran name-mangling scheme... lower case, underscore, no extra underscore
+checking for Fortran flag needed to allow free-form source... -ffree-form
+checking for g++... g++
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking dependency style of g++... gcc3
+checking for gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking dependency style of gcc... (cached) gcc3
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether ln -s works... yes
+checking for /proc/self/maps... yes
+checking whether everything is installed to the same prefix... no
+checking whether binary relocation support should be enabled... no
+checking build system type... x86_64-unknown-linux-gnu
+checking host system type... x86_64-unknown-linux-gnu
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for ar... ar
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking how to run the C preprocessor... gcc -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether g++ accepts -g... (cached) yes
+checking dependency style of g++... (cached) gcc3
+checking how to run the C++ preprocessor... g++ -E
+checking whether we are using the GNU Fortran compiler... (cached) yes
+checking whether gfortran accepts -g... (cached) yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... no
+checking for shl_load in -ldld... no
+checking for dlopen... yes
+checking whether a program can dlopen itself... yes
+checking whether a statically linked program can dlopen itself... no
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for ld used by g++... /usr/bin/ld -m elf_x86_64
+checking if the linker (/usr/bin/ld -m elf_x86_64) is GNU ld... yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... yes
+checking if g++ static flag -static works... yes
+checking if g++ supports -c -o file.o... yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for gfortran option to produce PIC... -fPIC
+checking if gfortran PIC flag -fPIC works... yes
+checking if gfortran static flag -static works... yes
+checking if gfortran supports -c -o file.o... yes
+checking if gfortran supports -c -o file.o... (cached) yes
+checking whether the gfortran linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for pdf sets to include... all
+configure: Number of concurrent PDF set arrays allocated = 3
+configure: Building LHAGLUE wrappers
+configure: Building C++ wrapper
+configure: Not building deprecated C++ wrapper library... good for you.
+checking for doxygen... no
+checking for python... /usr/bin/python
+checking whether /usr/bin/python version >= 2.3... yes
+checking for Python include path... /usr/include/python2.7
+checking for octave... no
+checking for mkoctfile... no
+checking if the target platform is Windows... no
+checking if the g++ compiler accepts the -pedantic flag... yes
+checking if the g++ compiler accepts the -ansi flag... yes
+checking if the g++ compiler accepts the -Wall flag... yes
+checking if the gfortran compiler accepts the -pedantic flag... no
+checking if the gfortran compiler accepts the -Wall flag... no
+checking if the gfortran compiler accepts the -ffree-form flag... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/parmsetup.inc
+config.status: creating include/Makefile
+config.status: creating include/LHAPDF/Makefile
+config.status: creating ccwrap/Makefile
+config.status: creating lib/Makefile
+config.status: creating examples/Makefile
+config.status: creating pyext/Makefile
+config.status: creating pyext/setup.py
+config.status: creating octave/Makefile
+config.status: creating bin/Makefile
+config.status: creating bin/lhapdf-config
+config.status: creating tests/Makefile
+config.status: creating config/config.h
+config.status: config/config.h is unchanged
+config.status: creating include/LHAPDF/FortranWrappers.h
+config.status: include/LHAPDF/FortranWrappers.h is unchanged
+config.status: creating include/LHAPDF/LHAPDFConfig.h
+config.status: include/LHAPDF/LHAPDFConfig.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+****************************************************************
+IMPORTANT INFORMATION ABOUT PDF SETS
+
+Due to the increasing number and size of PDF data files, LHAPDF
+no longer bundles PDF set data in the package tarball. The sets
+are instead all stored online at
+  http://www.hepforge.org/archive/lhapdf/pdfsets/
+and you should install those that you wish to use into
+  /usr/local/share/lhapdf
+
+The lhapdf-getdata script helps to automate the set download
+and installation process: before installation you will find
+it in the bin directory. Alternatively, download the sets by
+hand from the URL given above, and place them in the PDF sets
+directory (also given above.)
+****************************************************************
+

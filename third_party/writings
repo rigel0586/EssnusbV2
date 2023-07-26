@@ -1,0 +1,85 @@
+=========================================================
+Cern root dependencies
+=========================================================
+
+sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libssl-dev
+
+cmake -S ../source -B . -DCMAKE_INSTALL_PREFIX=../install -Dmathmore=mathmore -Dpythia6=pythia6 -DPYTHIA6_INCLUDE_DIR=/home/rigel/essnusb/github_Repo/EssnusbV2/third_party/genie/dependencies/pythia6/v6_428/inc -DPYTHIA6_LIBRARY=/home/rigel/essnusb/github_Repo/EssnusbV2/third_party/genie/dependencies/pythia6/v6_428/lib/libPythia6.so
+
+cmake --build . 
+cmake -- install -j4 .
+
+source ../root_install/bin/thisroot.sh
+
+
+=========================================================
+Genie dependencies
+=========================================================
+
+sudo apt-get install libtool aclocal autoheader automake autoconf
+
+
+sudo apt-get install autotools-dev
+sudo apt-get install automake
+
+export GENIE=/home/rigel/essnusb/sources/genie/Generator
+export ROOTSYS=/home/rigel/essnusb/sources/root/install
+export PATH=$PATH:/home/rigel/essnusb/sources/root/install/bin
+
+
+./configure --prefix=/home/rigel/essnusb/sources/genie/install --disable-profiler --disable-validation-tools --disable-cernlib --enable-lhapdf --enable-flux-drivers --enable-geom-drivers --disable-doxygen --enable-test --enable-muel --enable-dylibversion --enable-t2k --enable-fnal --enable-atmo --enable-nucleon-decay --disable-masterclass --disable-debug --with-optimiz-level=O2 --with-pythia6-lib=/home/rigel/essnusb/github_Repo/EssnusbV2/third_party/genie/dependencies/pythia6/v6_428/lib --with-log4cpp-inc=/home/rigel/essnusb/github_Repo/EssnusbV2/third_party/genie/dependencies/log4cpp/install/include --with-log4cpp-lib=/home/rigel/essnusb/github_Repo/EssnusbV2/third_party/genie/dependencies/log4cpp/install/lib
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/rigel/essnusb/github_Repo/EssnusbV2/third_party/genie/dependencies/pythia6/v6_428/lib:/home/rigel/essnusb/github_Repo/EssnusbV2/third_party/genie/dependencies/lhapdf-5.9.1/lib/.libs:/home/rigel/essnusb/github_Repo/EssnusbV2/third_party/genie/dependencies/log4cpp/install/lib:/usr/local/lib:/home/rigel/essnusb/sources/root/install/lib:/home/rigel/essnusb/sources/genie/install/lib
+
+--lhapdf5-inc=/home/rigel/essnusb/github_Repo/EssnusbV2/third_party/genie/dependencies/lhapdf-5.9.1/include/LHAPDF --lhapdf5-lib=/home/rigel/essnusb/github_Repo/EssnusbV2/third_party/genie/dependencies/lhapdf-5.9.1/lib/.libs
+             --with-libxml2-inc=/full/path/to/my/libml2/includes/
+             --with-libxml2-lib=/full/path/to/my/libxml2/library/
+
+=========================================================
+LHAPDF5 dependencies
+=========================================================
+to build it
+also in /usr/bin 
+cp python3 python
+
+export FCFLAGS=-std=legacy
+wihtout the upper flag an error is shown
+https://sourceforge.net/p/auto-07p/bugs/9/
+
+****************************************************************
+IMPORTANT INFORMATION ABOUT PDF SETS
+
+LHAPDF no longer bundles PDF set data in the package tarball.
+The sets are instead all stored online at
+  http://lhapdfsets.web.cern.ch/lhapdfsets/current/
+and you should install those that you wish to use into
+  /usr/local/share/LHAPDF
+
+The downloadable PDF sets are packaged as tarballs, which
+must be expanded to be used. The simplest way to do this is with
+the 'lhapdf' script, e.g. to install the CT10nlo PDF set:
+  lhapdf install CT10nlo
+The same effect can be achieved manually with, e.g.:
+  wget http://lhapdfsets.web.cern.ch/lhapdfsets/current/CT10nlo.tar.gz -O- | tar xz -C /usr/local/share/LHAPDF
+
+****************************************************************
+
+=========================================================
+Pythia6 dependencies
+=========================================================
+
+sudo apt install fastlink
+sudo apt install gfortran
+https://github.com/GENIE-MC/Generator/tree/master/src/scripts/build/ext/build_pythia6.sh
+=========================================================
+Miscelenious
+=========================================================
+cmake -S ../geant4-geant4-11.1-release -B .
+cmake -S ../CLHEP -B . -DCMAKE_INSTALL_PREFIX=/home/rigel/essnusb/sources/geant4/2.4.6.4/install
+
+cmake -S ../src -B . -DCMAKE_INSTALL_PREFIX=/home/rigel/essnusb/sources/geant4/expat-2.5.0/install
+cmake -S ../src -B . -DCMAKE_INSTALL_PREFIX=/home/rigel/essnusb/sources/geant4/zlib-1.2.13/install
+
+cmake -S ../geant4-geant4-11.1-release -B . -DCMAKE_INSTALL_PREFIX=/home/rigel/essnusb/sources/geant4/geant4_install
+
+

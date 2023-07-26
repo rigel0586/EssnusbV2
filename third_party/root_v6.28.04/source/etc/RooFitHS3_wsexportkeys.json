@@ -1,0 +1,93 @@
+{
+    "RooGaussian": {
+        "type": "gaussian_dist",
+        "proxies": {
+            "x": "x",
+            "mean": "mean",
+            "sigma": "sigma"
+        }
+    },
+    "RooPoisson": {
+        "type": "poisson_dist",
+        "proxies": {
+            "x": "x",
+            "mean": "mean"
+        }
+    },
+    "RooExponential": {
+        "type": "exponential_dist",
+        "proxies": {
+            "x": "x",
+            "c": "c"
+        }
+    },
+    "RooProduct": {
+        "type": "product",
+        "proxies": {
+            "compRSet": "factors",
+            "compCSet": "factors"
+        }
+    },
+    "RooProdPdf": {
+        "type": "product_dist",
+        "proxies": {
+            "pdfs": "factors"
+        }
+    },
+    "ParamHistFunc": {
+        "type": "step",
+        "proxies": {
+            "dataVars": "variables",
+            "paramSet": "parameters"
+        }
+    },
+    "RooAddPdf": {
+        "type": "mixture_dist",
+        "proxies": {
+            "refCoefNorm": "coefnormset",
+            "pdfs": "summands",
+            "coefficients": "coefficients"
+        }
+    },
+    "RooAddition": {
+        "type": "sum",
+        "proxies": {
+            "set": "summands"
+        }
+    },
+    "RooBernstein": {
+        "type": "bernstein_poly_dist",
+        "proxies": {
+            "coefList": "coefficients",
+            "x": "x"	    
+        }
+    },        
+    "RooArgusBG": {
+        "type": "ARGUS_dist",
+        "proxies": {
+            "m": "mass",
+            "m0": "resonance",
+            "c": "slope",
+            "p": "power"
+        }
+    },
+    "RooCBShape": {
+        "type": "crystalball_dist",
+        "proxies": {
+            "alpha": "alpha",
+            "m": "m",
+            "m0": "m0",
+            "n": "n",
+            "sigma": "sigma"
+        }
+    },
+    "RooBifurGauss": {
+        "type": "bifurkated_gaussian_dist",
+        "proxies": {
+            "x": "x",
+            "mean": "mean",
+            "sigmaL": "sigmaL",
+            "sigmaR": "sigmaR"	    
+        }
+    }
+}
