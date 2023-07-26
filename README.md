@@ -33,7 +33,7 @@ Each of the above project has its own dependencies. The bewow list the procedure
   **source /<install_path>/bin/thisroot.sh**
   After which root scripts can be executed.
 
-  ## B) Geant4
+## B) Geant4
   - CLHEP dependency -> go to **/third_party/geant4/dependencies** and exctract in a clhep folder the clhep-2.4.6.4.tgz  <br />
     create a new folder named **build** and enter it <br />
     open the build folder and type:  <br />
@@ -52,6 +52,13 @@ Each of the above project has its own dependencies. The bewow list the procedure
     create a new folder named **build** and enter it <br />
     open the build folder and type:  <br />
     $cmake -S \<extracted Zlib folder\> -B . -DCMAKE_INSTALL_PREFIX=\<install path\> <br />
+    $cmake --build . <br />
+    $cmake --install . <br />
+
+  - Geant4  -> go to **~/third_party/geant4/geant4-geant4-11.1-release** which is the extracted content of **/third_party/geant4/dependencies/geant4-geant4-11.1-release.zip**   <br />
+    create a new folder named **build** and enter it <br />
+    open the build folder and type:  <br />
+    $cmake -S \<extracted Geant folder ~/third_party/geant4/geant4-geant4-11.1-release \> -B . -DCMAKE_INSTALL_PREFIX=\<install path\> <br />
     $cmake --build . <br />
     $cmake --install . <br />
   
