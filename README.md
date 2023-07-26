@@ -35,25 +35,25 @@ Each of the above project has its own dependencies. The bewow list the procedure
 
   ## B) Geant4
   - CLHEP dependency -> go to **/third_party/geant4/dependencies** and exctract in a clhep folder the clhep-2.4.6.4.tgz  <br />
-    create a new folder named **build** and enter it
+    create a new folder named **build** and enter it <br />
     open the build folder and type:  <br />
-    $cmake -S <extracted CLHEP folder> -B . -DCMAKE_INSTALL_PREFIX=<install path>
-    #cmake --build .
-    #cmake --install .
+    $cmake -S <extracted CLHEP folder> -B . -DCMAKE_INSTALL_PREFIX=<install path> <br />
+    #cmake --build . <br />
+    #cmake --install . <br />
 
   - Expat dependency -> go to **/third_party/geant4/dependencies** and exctract in a clhep folder the expat-2.5.0.tar.gz  <br />
-    create a new folder named **build** and enter it
+    create a new folder named **build** and enter it <br />
     open the build folder and type:  <br />
-    $cmake -S <extracted Expat folder> -B . -DCMAKE_INSTALL_PREFIX=<install path>
-    #cmake --build .
-    #cmake --install .
+    $cmake -S <extracted Expat folder> -B . -DCMAKE_INSTALL_PREFIX=<install path> <br />
+    #cmake --build . <br />
+    #cmake --install . <br />
 
   - Zlib dependency -> go to **/third_party/geant4/dependencies** and exctract in a clhep folder the zlib-1.2.13.tar.gz  <br />
-    create a new folder named **build** and enter it
+    create a new folder named **build** and enter it <br />
     open the build folder and type:  <br />
-    $cmake -S <extracted Zlib folder> -B . -DCMAKE_INSTALL_PREFIX=<install path>
-    #cmake --build .
-    #cmake --install .
+    $cmake -S <extracted Zlib folder> -B . -DCMAKE_INSTALL_PREFIX=<install path> <br />
+    #cmake --build . <br />
+    #cmake --install . <br />
   
 
 
