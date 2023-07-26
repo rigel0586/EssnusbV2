@@ -13,13 +13,13 @@ Each of the above project has its own dependencies. The bewow list the procedure
       **$sudo apt-get install dpkg-dev cmake g++ gcc binutils libx11-dev libxpm-dev libxft-dev libxext-dev libssl-dev** <br />
   <br />
   
-  - Pythia6 is required to have the Root lib generated, also it is used by Genie <br />
-          To build it navigate to ** ~/third_party/genie/dependencies/pythia6** <br />
+- Pythia6 is required to have the Root lib generated, also it is used by Genie <br />
+          To build it navigate to **~/third_party/genie/dependencies/pythia6** <br />
           And execute  <br />
              **$source build_pythia6.sh** <br />
 
   <br />
- - Gsl has to be build, the sources used are located in ~third_party/root_v6.28.04/dependencies/gsl-2.7.1<br />
+- Gsl has to be build, the sources used are located in ~third_party/root_v6.28.04/dependencies/gsl-2.7.1<br />
           Open a terminal and type <br />
               #./configure <br />
               #make <br />
