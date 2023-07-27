@@ -82,12 +82,13 @@ NOTE: If python cmd is not found for lhapdf6, navigate to /usr/bin and type
               $gmake install
    
 NOTE: If python cmd is not found for lhapdf5, navigate to /usr/bin and type
-**cp python2 python** -> this will copy the python 3 as a python cmd.
+**cp python2 python** -> this will copy the python 2 as a python cmd.Lhapdf5 requires python 2.
  - lhapdf5 has to be build, the sources used are located in **~third_party/genie/dependencies/lhapdf-5.9.1**<br />
           Create a build folder, enter and a terminal, type <br />
-              $cmake -S \<Path to ~third_party/genie/dependencies/log4cpp/log4cpp-1.1.4 \> -B . -DCMAKE_INSTALL_PREFIX=\<install path\> <br />
-              $cmake --build . <br />
-              $cmake --install . <br />
+              $export FCFLAGS=-std=legacy (Info: wihtout the this flag an error is shown https://sourceforge.net/p/auto-07p/bugs/9/ )
+              $./configure --prefix=\< install path is optional >\
+              $gmake
+              $gmake install
   
 
 
