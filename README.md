@@ -126,6 +126,10 @@ Before following the installation instructions given above and and/or before run
                --with-log4cpp-lib=/full/path/to/my/log4cpp/library/ <br />
                --lhapdf5-inc=/full/path/to/my/lhapdf5/includes/ <br />
                --lhapdf5-lib=/full/path/to/my/lhapdf5/library/ <br />
+
+    To run genie binaries the following evironmental variables have to be set: 
+    $export PATH=$PATH:$ROOTSYS/bin:$GENIE/bin -> ROOTSYS and GENIE are set above
+    $export LD_LIBRARY_PATH=$LD_LIBRARY_PATH: ~/third_party/genie/dependencies/pythia6/v6_428/lib:~/third_party/genie/dependencies/lhapdf-5.9.1/lib/.libs:~/third_party/genie/dependencies/log4cpp/install/lib:/usr/local/lib:\<root install folder\>/lib:\<genie install folder\>/lib
                
   
 
