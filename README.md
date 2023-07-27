@@ -73,6 +73,21 @@ Each of the above project has its own dependencies. The bewow list the procedure
               $cmake --build . <br />
               $cmake --install . <br />
 
+NOTE: If python cmd is not found for lhapdf6, navigate to /usr/bin and type
+**cp python3 python** -> this will copy the python 3 as a python cmd. lhapdf requires python3.
+ - lhapdf6 has to be build, the sources used are located in **~third_party/genie/dependencies/lhapdf6.5.4/LHAPDF-6.5.4**<br />
+          Open a terminal, type <br />
+              $./configure --prefix=\< install path is optional >\
+              $gmake
+              $gmake install
+   
+NOTE: If python cmd is not found for lhapdf5, navigate to /usr/bin and type
+**cp python2 python** -> this will copy the python 3 as a python cmd.
+ - lhapdf5 has to be build, the sources used are located in **~third_party/genie/dependencies/lhapdf-5.9.1**<br />
+          Create a build folder, enter and a terminal, type <br />
+              $cmake -S \<Path to ~third_party/genie/dependencies/log4cpp/log4cpp-1.1.4 \> -B . -DCMAKE_INSTALL_PREFIX=\<install path\> <br />
+              $cmake --build . <br />
+              $cmake --install . <br />
   
 
 
