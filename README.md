@@ -98,10 +98,10 @@ Before following the installation instructions given above and and/or before run
 -> All your binary paths ($ROOTSYS/bin, $GENIE/bin) are listed in $PATH
 
 -Navigate to Genie folder, type in terminal <br />
-    $export GENIE=\< path to genie source **~third_party/genie/repoR-3_04_00** \>
-    $export ROOTSYS=\< path to root installation folder \>
-    $export PATH=$PATH:\< path to root installation folder \>/bin
-    ./configure --prefix=/some/installation/path <br />
+    $export GENIE=\< path to genie source **~third_party/genie/repoR-3_04_00** \>  <br />
+    $export ROOTSYS=\< path to root installation folder \>  <br />
+    $export PATH=$PATH:\< path to root installation folder \>/bin  <br />
+    $./configure --prefix=/some/installation/path <br />
                --disable-profiler <br />
                --disable-validation-tools <br />
                --disable-cernlib <br />
