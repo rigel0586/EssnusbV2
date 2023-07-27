@@ -89,6 +89,43 @@ NOTE: If python cmd is not found for lhapdf5, navigate to /usr/bin and type
               $./configure --prefix=\< install path is optional >\
               $gmake
               $gmake install
+
+
+Before following the installation instructions given above and and/or before running GENIE, make sure that:
+-> You have defined $GENIE to point at your top level GENIE directory
+-> You have defined $ROOTSYS to point at your ROOT installation
+-> All your library paths ($ROOTSYS/lib, $GENIE/lib, /path/to/pyhia6, /path/to/libxml2/lib, /path/to/log4cpp/lib, ...) are listed in $LD_LIBRARY_PATH (of $DYLD_LIBRARY_PATH on Mac OS X)
+-> All your binary paths ($ROOTSYS/bin, $GENIE/bin) are listed in $PATH
+
+-Navigate to Genie folder, type in terminal <br />
+    $export GENIE=\< path to genie source **~third_party/genie/repoR-3_04_00** \>
+    $export ROOTSYS=\< path to root installation folder \>
+    $export PATH=$PATH:\< path to root installation folder \>/bin
+    ./configure --prefix=/some/installation/path <br />
+               --disable-profiler <br />
+               --disable-validation-tools <br />
+               --disable-cernlib <br />
+               --enable-lhapdf <br />
+               --enable-flux-drivers <br />
+               --enable-geom-drivers <br />
+               --disable-doxygen <br />
+               --enable-test <br />
+               --enable-mueloss <br />
+               --enable-dylibversion <br />
+               --enable-t2k <br />
+               --enable-fnal <br />
+               --enable-atmo <br />
+               --enable-nucleon-decay <br />
+               --disable-masterclass <br />
+               --disable-debug <br />
+               --with-optimiz-level=O2 <br />
+               --with-pythia6-lib=/full/path/to/my/libPythia6/ <br />
+               --with-libxml2-inc=/full/path/to/my/libml2/includes/ <br />
+               --with-libxml2-lib=/full/path/to/my/libxml2/library/ <br />
+               --with-log4cpp-inc=/full/path/to/my/log4cpp/includes/ <br />
+               --with-log4cpp-lib=/full/path/to/my/log4cpp/library/ <br />
+               --lhapdf5-inc=/full/path/to/my/lhapdf5/includes/ <br />
+               --lhapdf5-lib=/full/path/to/my/lhapdf5/library/ <br />
   
 
 
