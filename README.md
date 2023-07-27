@@ -1,7 +1,7 @@
 # EssnusbV2
 Extension to previous project Essnusb
 
-# 1.Prerequisites
+# 1.Prerequisites (The below are only if you want to build and run the application locally)
 The project depends on the following subproject (for each the version used is added after the name): <br />
   a) CERN ROOT 6.28.04 - https://root.cern/releases/release-62804/ <br />
   b) Geant4 geant4-11.1-release - https://geant4-userdoc.web.cern.ch/UsersGuides/InstallationGuide/html/installguide.html <br />
@@ -15,6 +15,7 @@ Each of the above project has its own dependencies. The bewow list the procedure
 
 - Pythia6 is required to have the Root lib generated, also it is used by Genie <br />
           To build it navigate to **~/third_party/genie/dependencies/pythia6** <br />
+          Original linkg: * *https://github.com/GENIE-MC/Generator/tree/master/src/scripts/build/ext/build_pythia6.sh* *
           And execute  <br />
              **$source build_pythia6.sh** <br />
 
@@ -61,6 +62,16 @@ Each of the above project has its own dependencies. The bewow list the procedure
     $cmake -S \<extracted Geant folder ~/third_party/geant4/geant4-geant4-11.1-release \> -B . -DCMAKE_INSTALL_PREFIX=\<install path\> <br />
     $cmake --build . <br />
     $cmake --install . <br />
+
+## C) Genie
+ - To install the required packages use <br />
+      **$sudo apt-get install libtool aclocal autoheader automake autoconf autotools-dev** <br />
+
+ - log4cpp has to be build, the sources used are located in **~third_party/genie/dependencies/log4cpp/log4cpp-1.1.4**<br />
+          Create a build folder, enter and a terminal, type <br />
+              $cmake -S \<Path to ~third_party/genie/dependencies/log4cpp/log4cpp-1.1.4 \> -B . -DCMAKE_INSTALL_PREFIX=\<install path\> <br />
+              $cmake --build . <br />
+              $cmake --install . <br />
 
   
 
